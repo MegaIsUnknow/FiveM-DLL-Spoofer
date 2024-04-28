@@ -127,7 +127,7 @@ void entry_point()
 
     // @pushfd if sig doesnt work : )
 
-    const std::uintptr_t dump_addr = find_pattern(adhesive_base, "41 57 41 56 41 55 41 54 56 57 55 53 48 83 EC ?? 44 0F 29 44 24");
+    const std::uintptr_t dump_addr = find_pattern(adhesive_base, "41 57 41 56 41 55 41 54 56 57 55 53 48 83 ec ? 44 0f 29 6c 24 30");
 
     MH_Initialize();
 
